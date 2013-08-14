@@ -100,7 +100,7 @@ ALTER SEQUENCE donors_id_seq OWNED BY donors.id;
 -- Name: donors_id_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('donors_id_seq', 1, true);
+SELECT pg_catalog.setval('donors_id_seq', 2, true);
 
 
 --
@@ -143,6 +143,7 @@ COPY blood_groups (id, bloodgroup, created_at, updated_at) FROM stdin;
 
 COPY donors (id, name, contact, blood_group_id, email, created_at, updated_at, district) FROM stdin;
 1	me	1234567890	1	me@you.com	2013-08-14 04:26:36.209646	2013-08-14 04:26:36.209646	qwerty
+2	you	1111111111	1	you@you.com	2013-08-14 05:54:32.367539	2013-08-14 05:54:32.367539	qwerty
 \.
 
 
